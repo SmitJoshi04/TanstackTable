@@ -2,7 +2,7 @@ const Tabs = ({ tabs, activeTab, onTabChange }) => {
   return (
     <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-wrap border-b border-gray-300">
-        {tabs.map((tab) => (
+        {tabs?.map((tab) => (
           <button
             key={tab.infrastructure_id}
             onClick={() => onTabChange(tab.infrastructure_id)}
